@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeIQ - Result</title>
+</head>
 
+<body>
+
+    <h1>ResumeIQ</h1>
+
+    <h2>Resume Analysis Result</h2>
+
+    <div>
+        <h3>Resume Match Score</h3>
+        <h1>{{ score }}%</h1>
+    </div>
+
+    <div>
+        <h3>🛠️ Skills Found</h3>
+
+        {% if found_skills %}
+            <p>{{ found_skills | join(", ") }}</p>
+        {% else %}
+            <p>No skills found.</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <h3>🎯 Matched Skills</h3>
+
+        {% if matched_skills %}
+            <p>{{ matched_skills | join(", ") }}</p>
+        {% else %}
+            <p>No matching skills found.</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <h3>⚠️ Missing Skills</h3>
+
+        {% if missing_skills %}
+            <p>{{ missing_skills | join(", ") }}</p>
+        {% else %}
+            <p>No missing skills.</p>
+        {% endif %}
+    </div>
+
+    <br>
+
+    <a href="/">← Analyze Another Resume</a>
+
+</body>
+</html>
