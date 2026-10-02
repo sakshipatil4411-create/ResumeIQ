@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeIQ - AI Resume Screening</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Resume<span>IQ</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#analyze">Analyze Resume</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+            <h1>Smart Resume Screening with AI</h1>
+
+            <p>
+                Upload your resume and let ResumeIQ analyze
+                your skills, job match and resume score.
+            </p>
+
+            <a href="#analyze" class="btn">Analyze Resume</a>
+        </div>
+
+        <div class="hero-card">
+            <div class="icon">🤖</div>
+            <h2>AI Powered</h2>
+            <p>Fast and smart resume analysis</p>
+        </div>
+
+    </section>
+
+
+    <section id="features" class="features">
+
+        <h2>ResumeIQ Features</h2>
+
+        <div class="feature-container">
+
+            <div class="feature">
+                <h3>📄 Resume Scanning</h3>
+                <p>Automatically reads your resume.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🎯 Job Matching</h3>
+                <p>Checks your resume with job requirements.</p>
+            </div>
+
+            <div class="feature">
+                <h3>📊 Resume Score</h3>
+                <p>Gives a simple matching score.</p>
+            </div>
+
+            <div class="feature">
+                <h3>💡 Skill Analysis</h3>
+                <p>Finds your skills and missing skills.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="analyze" class="analyze">
+
+        <h2>Analyze Your Resume</h2>
+
+        <form id="resumeForm">
+
+            <label>Upload Resume</label>
+
+            <input
+                type="file"
+                id="resume"
+                accept=".pdf,.doc,.docx"
+                required
+            >
+
+            <label>Job Description</label>
+
+            <textarea
+                id="jobDescription"
+                placeholder="Enter job requirements here..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Analyze Resume
+            </button>
+
+        </form>
+
+        <div id="message"></div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 ResumeIQ | AI-Based Resume Screening System</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
